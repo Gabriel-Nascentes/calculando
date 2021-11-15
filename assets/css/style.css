@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital@0;1&family=Mochiy+Pop+P+One&family=Poppins:ital,wght@0,500;1,500&family=Raleway:wght@800&display=swap');
+:root{
+    --color-1:#545454;
+    --color-2:#69747c;
+    --color-3:#6baa75;
+    --color-4:#84dd63;
+    --color-5:#cbff4d;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html{
+    font-size: 62.5%;
+    font-family: 'Mochiy Pop P One',sans-serif;
+    color: var(--color-3);
+    background: var(--color-1);
+}
+h1{
+    font-size: 5rem;
+}
+a{
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: var(--color-3);
+}
+
+.content{
+    border-left: 0.5rem solid var(--color-3);
+    border-right: 0.5rem solid var(--color-3);
+    max-width: 80rem;
+    min-width: 30rem;
+    margin: auto;
+    padding: 3rem 3rem;
+    background: var(--color-2);
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 3rem;
+    justify-content: space-around;
+
+}
+.container{
+    display: block;
+    justify-content: center;
+    height: 45rem;
+    width: 50rem;
+    padding: 3rem auto;
+    margin: auto;
+}
+.resultado{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+}
+nav{
+    display: flex;
+    text-align: center;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin: 3rem;
+}
+form input, form label , form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+
+}
+form input{
+    font-size: 2.5rem;
+    height: 3rem;
+    padding: 2rem;
+    outline: none;
+    color: var(--color-1);
+    
+}
+form input:focus{
+    outline: 0.2rem solid var(--color-5);
+}
+
+form button{
+    padding: 1rem 0;
+    background: var(--color-5);
+    color: var(--color-2);
+    border: none;
+    cursor: pointer;    
+}
+form button:hover{
+    background: var(--color-4);
+
+}
+
+@media (max-width:38rem){
+    .container{
+        width: 25rem;
+
+    }
+}
